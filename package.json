@@ -1,0 +1,26 @@
+{
+  "name": "@indexr/monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "build:packages": "turbo build --filter @packages/*",
+    "dev": "turbo dev",
+    "format": "prettier -wc --cache .",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "@taskylizard/tasker": "^1.0.5",
+    "prettier": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.10",
+    "turbo": "^1.12.2",
+    "typescript": "^5.1.0"
+  },
+  "packageManager": "bun@1.0.25"
+}
