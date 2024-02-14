@@ -1,0 +1,25 @@
+{
+  "name": "@packages/linter",
+  "type": "module",
+  "module": "src/index.ts",
+  "scripts": {
+    "build": "tasker build"
+  },
+  "dependencies": {
+    "citty": "^0.1.6",
+    "remark": "^15.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "remark-stringify": "^11.0.0",
+    "remark-toc": "^9.0.0",
+    "unified": "^11.0.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
